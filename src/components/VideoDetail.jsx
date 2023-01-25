@@ -74,9 +74,7 @@ const VideoDetail = () => {
             </Stack>
           </Box>
         </Box>
-      </Stack>
-
-      <Box
+        <Box
         px={2}
         py={{ md: 1, xs: 5 }}
         justifyContent="center"
@@ -85,6 +83,9 @@ const VideoDetail = () => {
         <Typography variant="h6">Related Videos</Typography>
         <Videos videos={videos} direction="column" />
       </Box>
+      </Stack>
+
+   
     </Box>
   );
 };
