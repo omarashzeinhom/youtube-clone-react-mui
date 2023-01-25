@@ -19,12 +19,12 @@ const VideoCard = ({
   //console.log(videoId, snippet);
 
   return (
-    <Card>
+    <Card sx={{width:{md: '320px', xs:'100%'}, boxShadow: 'none', borderRadius: 0}}>
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <CardMedia
           image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
-          sx={{ width: 350, height: 150,  }}
+          sx={{ width: 350, height: 150, objectFit: 'cover'  }}
         />
       </Link>
       <CardContent sx={{ backgroundColor: "#1e1e1e", height: "101px" }}>
@@ -35,7 +35,7 @@ const VideoCard = ({
         </Link>
 
         <Link to={snippet?.channelId ? `/channel/${snippet?.channelId}` : demoChannelUrl}>
-          <Typography variant="subtitle2" fontWeight="bold" color="#fff">
+          <Typography variant="subtitle2" fontWeight="bold" color="#fff" sx={{color:'gray', fontSize: 12,}}>
             {snippet?.channelTitle || demoChannelTitle}
           </Typography>
         </Link>

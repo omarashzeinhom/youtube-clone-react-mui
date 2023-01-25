@@ -16,6 +16,7 @@ export const logo = 'https://res.cloudinary.com/dxgqvvg0z/image/upload/v16746641
 
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },
+  { name: 'ANDGOEDU code', icon: <CodeIcon />, },
   { name: 'Coding', icon: <CodeIcon />, },
   { name: 'ReactJS', icon: <CodeIcon />, },
   { name: 'NextJS', icon: <CodeIcon />, },
