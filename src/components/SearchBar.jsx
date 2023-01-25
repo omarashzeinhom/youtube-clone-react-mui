@@ -11,20 +11,19 @@ const SearchBar = () => {
       onSubmit={() => {}}
       sx={{
         borderRadius: 20,
-        border: "1px solid #e3e3e3",
+        border: "1px solid orange",
         pl: 2,
         boxShadow: "none",
         mr: { sm: 5 },
       }}
     >
-
       <input
         className="search-bar"
         placeholder="Search..."
         value=""
         onChange={() => {}}
       />
-      <IconButton type="submit" sx={{ p: "10px", color: "red" }}>
+      <IconButton type="submit" sx={{ p: "10px", color: "orange" }}>
         <Search />
       </IconButton>
     </Paper>
